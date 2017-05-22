@@ -24,7 +24,6 @@ if ($gClient->getAccessToken()) {
             $google_lname = $gUserProfile["family_name"];
             $google_email = $gUserProfile["email"];
             $google_link = $gUserProfile["link"];
-            $google_gender = $gUserProfile["gender"];
             $google_locale = $gUserProfile["locale"];
             $google_img = $gUserProfile["picture"];
 
@@ -38,7 +37,7 @@ if ($gClient->getAccessToken()) {
             }else{
 
                 $sql = "INSERT INTO `google_login` 
-                	(`ID`, `google_id`, `google_name`, `google_fname`, `google_lname`, `google_email`, `google_link`, `google_gender`, `google_locale`, `google_img`) 
+                	(`ID`, `google_id`, `google_name`, `google_fname`, `google_lname`, `google_email`, `google_link`, `google_locale`, `google_img`) 
                 	VALUES (NULL, '$google_id', '$google_name', '$google_fname', '$google_lname', '$google_email', '$google_link', '$google_gender', '$google_locale', '$google_img')";
                 
                 if ($conn->query($sql) === TRUE) {

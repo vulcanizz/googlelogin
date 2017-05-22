@@ -22,11 +22,12 @@ include_once('google-login.php');
 				<img src="<?php echo $google_img ; ?>" alt="">
 			</div>
 			<div style="float: left; margin-left: 200px; margin-top: 10px;">
-				<p>ชื่อ google :  <?php echo $google_name ; ?></p>
-				<p>ชื่อจริง :  <?php echo $google_fname ; ?></p>
-				<p>ชื่อสกุล :  <?php echo $google_lname ; ?></p>
-				<p>เพศ :  <?php echo $google_gender ; ?></p>
-				<p>email :  <?php echo $google_email ; ?></p>
+				<p>Fullname :  <?php echo $google_name; ?></p>
+				<p>Firstname :  <?php echo $google_fname; ?></p>
+				<p>Lastname :  <?php echo $google_lname; ?></p>
+				<p>Link :  <?php echo $google_link; ?></p>
+				<p>Email :  <?php echo $google_email; ?></p>
+				<p>Locale :  <?php echo $google_locale; ?></p>
 			</div>
         		<?php
         			echo '<a href="logout.php" class="myButton"> <button class="box-out"> Logout from google </button>  </a>';
